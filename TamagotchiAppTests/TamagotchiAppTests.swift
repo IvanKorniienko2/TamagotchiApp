@@ -10,27 +10,17 @@ import XCTest
 
 class TamagotchiAppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func TestNewTamagotchiAppGivesMeATamWithAllAttributesSet() {
+        //arrange
+        //act
+        let tamagotchi = TamagotchiClass(self.name: "Kurotsuchi", self.health: 100, self.hunger: 20, self.happiness: 75, self.age: 0, self.weight: 5)
+        //assert
+        XCTAssertEqual(tamagotchi.name, "Kurotsuchi")
+        XCTAssertEqual(tamagotchi.health, 100)
+        XCTAssertEqual(tamagotchi.hunger, 20)
+        XCTAssertEqual(tamagotchi.happiness, 75)
+        XCTAssertEqual(tamagotchi.age, 0)
+        XCTAssertEqual(tamagotchi.weight, 5)
     }
 
 }
