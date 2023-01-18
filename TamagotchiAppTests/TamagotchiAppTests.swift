@@ -13,7 +13,15 @@ class TamagotchiAppTests: XCTestCase {
     func TestNewTamagotchiAppGivesMeATamWithAllAttributesSet() {
         //arrange
         //act
-        let tamagotchi = TamagotchiClass(self.name: "Kurotsuchi", self.health: 100, self.hunger: 20, self.happiness: 75, self.age: 0, self.weight: 5)
+        let tamagotchi = tamagotchiClass()
+        let tamagotchiAttributes = tamagotchiClass.displayStats(<#T##self: tamagotchiClass##tamagotchiClass#>)
+        
+        let expectedName = 
+        
+        
+        
+        
+        
         //assert
         XCTAssertEqual(tamagotchi.name, "Kurotsuchi")
         XCTAssertEqual(tamagotchi.health, 100)

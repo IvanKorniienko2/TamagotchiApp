@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    let tamagotchi = TamagotchiClass(self.name: "Kurotsuchi", self.health: 100, self.hunger: 20, self.happiness: 75, self.age: 0, self.weight: 5)
+    let tamagotchi = tamagotchiClass(self.name: "Kurotsuchi", self.health: 100, self.hunger: 20, self.happiness: 75, self.age: 0, self.weight: 5)
     }
-    var body: som View {
+    var body: some View {
         Text("Tamagotchi: \(tamagotchi.name)")
             .padding()
     }
