@@ -7,14 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    let tamagotchi = tamagotchiClass(self.name: "Kurotsuchi", self.health: 100, self.hunger: 20, self.happiness: 75, self.age: 0, self.weight: 5)
-    }
+struct ContentView:View {
+    let tamagotchi = Tamagotchi()
+
     var body: some View {
         Text("Tamagotchi: \(tamagotchi.name)")
             .padding()
+        VStack(alignment: .leading) {
+            Button("Feed Tamagotchi") {
+                
+            }
+        }
     }
-
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -7,8 +7,8 @@
 
 import Foundation
 
-class tamagotchiClass {
-    private let name: String
+class Tamagotchi {
+    let name: String
     private var health: Int
     private var hunger: Int
     private var happiness: Int
@@ -25,9 +25,8 @@ class tamagotchiClass {
     }
     
     func displayStats() -> (name: String, health: Int, hunger: Int, happiness: Int, age: Int, weight: Int) {
-        let stats = (name: self.name, self.health: Int, self.hunger: Int, self.happiness: Int, self.age: Int, self.weight: Int)
+        let stats = (name: self.name, health: self.health, hunger: self.hunger, happiness: self.happiness, age: self.age, weight: self.weight)
         return stats
     }
-    
 }
 
