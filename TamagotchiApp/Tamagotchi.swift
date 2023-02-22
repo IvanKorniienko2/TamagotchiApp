@@ -28,5 +28,12 @@ class Tamagotchi {
         let stats = (name: self.name, health: self.health, hunger: self.hunger, happiness: self.happiness, age: self.age, weight: self.weight)
         return stats
     }
+    
+    func feedTamagotchi() {
+        self.hunger -= 10
+        self.happiness += 5
+        self.weight += 2
+        self.health += 5
+    }
 }
 

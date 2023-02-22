@@ -11,12 +11,11 @@ struct ContentView:View {
     let tamagotchi = Tamagotchi()
 
     var body: some View {
-        Text("Tamagotchi: \(tamagotchi.name)")
-            .padding()
         VStack(alignment: .leading) {
-            Button("Feed Tamagotchi") {
-                
-            }
+            Text("\(tamagotchi.displayStats().0 ?? ".")")
+            Button("Feed Tamagotchi", action: {
+                tamagotchi.feedTamagotchi()
+            })
         }
     }
 }

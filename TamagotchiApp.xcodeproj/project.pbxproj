@@ -15,6 +15,7 @@
 		43C7C7B62972C050009D994E /* TamagotchiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7C7B52972C050009D994E /* TamagotchiAppUITestsLaunchTests.swift */; };
 		43C7C7C32972C096009D994E /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7C7C22972C096009D994E /* Tamagotchi.swift */; };
 		43C7C7C42972C18A009D994E /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7C7C22972C096009D994E /* Tamagotchi.swift */; };
+		43E832B729A677710032FAA1 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E832B629A677710032FAA1 /* Stats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		43C7C7B32972C050009D994E /* TamagotchiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiAppUITests.swift; sourceTree = "<group>"; };
 		43C7C7B52972C050009D994E /* TamagotchiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43C7C7C22972C096009D994E /* Tamagotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi.swift; sourceTree = "<group>"; };
+		43E832B629A677710032FAA1 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				43C7C79C2972C050009D994E /* Assets.xcassets */,
 				43C7C79E2972C050009D994E /* Preview Content */,
 				43C7C7C22972C096009D994E /* Tamagotchi.swift */,
+				43E832B629A677710032FAA1 /* Stats.swift */,
 			);
 			path = TamagotchiApp;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43C7C79B2972C04F009D994E /* ContentView.swift in Sources */,
+				43E832B729A677710032FAA1 /* Stats.swift in Sources */,
 				43C7C7992972C04F009D994E /* TamagotchiAppApp.swift in Sources */,
 				43C7C7C32972C096009D994E /* Tamagotchi.swift in Sources */,
 			);
