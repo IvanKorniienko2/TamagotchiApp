@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView:View {
-    let tamagotchi = Tamagotchi()
+    @State private var basicStats = BasicStats()
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("\(tamagotchi.displayStats().0 ?? ".")")
-            Button("Feed Tamagotchi", action: {
-                tamagotchi.feedTamagotchi()
-            })
+        VStack {
+            Text("\(basicStats.stats[0].displayStats())")
+            Button("Feed", action: {feedTamagotchi()})
+        }
+    }
+    
+    func feedTamagotchi() {
+        if basicStats.stats[0].hunger - 20 >= 0 {
+            basicStats.stats[0].hunger -= 20
+        }
+        if basicStats.stats[0].health + 10 <= 100 {
+            basicStats.stats[0].health += 10
+        }
+        if basicStats.stats[0].happiness + 10 >= 0 {
+            basicStats.stats[0].happiness += 10
+        }
+        if basicStats.stats[0].weight + 2 <= 50 {
+            basicStats.stats[0].weight += 2
         }
     }
 }
