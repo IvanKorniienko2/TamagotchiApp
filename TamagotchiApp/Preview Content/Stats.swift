@@ -16,6 +16,7 @@ struct Stats {
     var health: Int
     var hunger: Int
     var happiness: Int
+    var isPlaying: Bool
     
     func displayStats() -> String {
         
@@ -26,6 +27,7 @@ struct Stats {
             health: \(health)
             hunger: \(hunger)
             happiness: \(happiness)
+            isPlaying: \(isPlaying)
         """
         
     }
